@@ -1,6 +1,7 @@
-import FETCH_USER from '../constants/actionTypes';
+import { FETCH_USER } from '../constants/actionTypes';
 
-export default function(state = null, action){
+const authReducer = function(state = null, action){
+    console.log(action);
     switch (action.type) {
         case FETCH_USER:
             return action.payload || false;
@@ -8,3 +9,5 @@ export default function(state = null, action){
             return state;
     }
 }
+
+export default authReducer;
