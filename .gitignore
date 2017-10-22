@@ -1,6 +1,6 @@
 /node_modules
+dev.js
 /uploads
 bundle.js
 npm-debug.log
 .DS_Store
-./config/dev.js
