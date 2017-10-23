@@ -1,9 +1,9 @@
 import React from 'react';
-
+import SurveysList from './surveys/SurveysList';
 const Dashboard = () => {
     return (
         <div>
-            Dashboard
+            <SurveysList />
         </div>
     );
 }
