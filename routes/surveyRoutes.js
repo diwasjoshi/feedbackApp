@@ -20,6 +20,7 @@ router.post('/', userAuthenticationMiddle, requireCreditsMiddle, async (req, res
     })
 
     try{
+        console.log('here');
         const mailer = new Mailer(survey, surveyTemplate(survey));
         await mailer.send();
         await survey.save();

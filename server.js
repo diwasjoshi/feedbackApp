@@ -26,11 +26,12 @@ app.use(passport.session());
 //Routes
 var accountsRoute = require("./routes/accounts");
 var billingRoutes = require("./routes/billingRoutes");
+var surveyRoutes = require("./routes/surveyRoutes");
 
 app.use("/auth/", accountsRoute);
 app.use("/api/accounts/", accountsRoute);
 app.use("/api/stripe", billingRoutes);
-
+app.use("/api/surveys", surveyRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);
