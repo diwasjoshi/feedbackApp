@@ -14,7 +14,7 @@ router.get(
 router.get(
     '/google/callback',
     passport.authenticate('google'), function(req, res){
-        res.redirect('/api/accounts/current_user');
+        res.redirect('/surveys');
     }
 )
 
